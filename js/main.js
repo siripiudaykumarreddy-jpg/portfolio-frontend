@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",() => {
             }
         });
     });
-    fetch("https://localhost:8080/api/projects")
+    fetch("https://portfolio-backend-q8w4.onrender.com/api/projects")
         .then((res)=>res.json())
         .then((projects) => {
             const container=document.getElementById("projects-container");
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded",() => {
             alert("please fill the details");
             return;
         }
-        fetch("http://localhost:8080/api/contact",{
+        fetch("https://portfolio-backend-q8w4.onrender.com/api/contact",{
             method:"POST",
             headers: {
                 "Content-Type": "application/json"
